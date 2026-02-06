@@ -1,1 +1,196 @@
-n
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Basic Login</title>
+  <style>
+    :root{
+      --bg:#eef2f7;
+      --card:#ffffff;
+      --accent:#4f46e5;
+      --muted:#6b7280;
+    }
+    *{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0}
+    html,body{height:100%}
+    body{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(135deg,#f8fafc 0%, #eef2f7 100%);
+      padding:24px;
+    }
+    .card{
+      width:100%;
+      max-width:360px;
+      background:var(--card);
+      border-radius:12px;
+      padding:28px;
+      box-shadow:0 8px 30px rgba(16,24,40,0.08);
+      border:1px solid rgba(15,23,42,0.04);
+    }
+    h2{
+      font-size:20px;
+      margin-bottom:18px;
+      color:#0f172a;
+      text-align:center;
+    }
+    .field{display:flex;flex-direction:column;margin-bottom:14px}
+    label{font-size:13px;color:var(--muted);margin-bottom:6px}
+    input[type="text"],input[type="password"]{
+      padding:10px 12px;
+      border:1px solid #e6e9ef;
+      border-radius:8px;
+      font-size:15px;
+      outline:none;
+      transition:box-shadow .15s, border-color .15s;
+      background:#fff;
+    }
+    input[type="text"]:focus,input[type="password"]:focus{
+      border-color:rgba(79,70,229,0.9);
+      box-shadow:0 4px 14px rgba(79,70,229,0.08);
+    }
+    .opts{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      font-size:13px;
+      color:var(--muted);
+      margin-bottom:16px;
+    }
+    .opts a{color:var(--accent);text-decoration:none;font-weight:500}
+    button[type="submit"]{
+      width:100%;
+      padding:11px 14px;
+      border:0;
+      border-radius:10px;
+      background:var(--accent);
+      color:#fff;
+      font-weight:600;
+      cursor:pointer;
+      transition:transform .08s,box-shadow .08s;
+    }
+    button[type="submit"]:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(79,70,229,0.12)}
+    .small{font-size:13px;color:var(--muted);text-align:center;margin-top:12px}
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <h2>Sign in to your account</h2>
+    <form action="#" method="post" autocomplete="on">
+      <div class="field">
+        <label for="user">Username</label>
+        <input id="user" name="username" type="text" placeholder="you@example.com" required />
+      </div>
+      <div class="field">
+        <label for="pass">Password</label>
+        <input id="pass" name="password" type="password" placeholder="Enter your password" required />
+      </div>
+      <div class="opts">
+        <label><input type="checkbox" name="remember" /> Remember me</label>
+        <a href="#">Forgot?</a>
+      </div>
+      <button type="submit">Log in</button>
+      <div class="small">Don't have an account? <a href="#" style="color:var(--accent);text-decoration:none">Sign up</a></div>
+    </form>
+  </main>
+</body>
+</html>
+```<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Basic Login</title>
+  <style>
+    :root{
+      --bg:#eef2f7;
+      --card:#ffffff;
+      --accent:#4f46e5;
+      --muted:#6b7280;
+    }
+    *{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0}
+    html,body{height:100%}
+    body{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(135deg,#f8fafc 0%, #eef2f7 100%);
+      padding:24px;
+    }
+    .card{
+      width:100%;
+      max-width:360px;
+      background:var(--card);
+      border-radius:12px;
+      padding:28px;
+      box-shadow:0 8px 30px rgba(16,24,40,0.08);
+      border:1px solid rgba(15,23,42,0.04);
+    }
+    h2{
+      font-size:20px;
+      margin-bottom:18px;
+      color:#0f172a;
+      text-align:center;
+    }
+    .field{display:flex;flex-direction:column;margin-bottom:14px}
+    label{font-size:13px;color:var(--muted);margin-bottom:6px}
+    input[type="text"],input[type="password"]{
+      padding:10px 12px;
+      border:1px solid #e6e9ef;
+      border-radius:8px;
+      font-size:15px;
+      outline:none;
+      transition:box-shadow .15s, border-color .15s;
+      background:#fff;
+    }
+    input[type="text"]:focus,input[type="password"]:focus{
+      border-color:rgba(79,70,229,0.9);
+      box-shadow:0 4px 14px rgba(79,70,229,0.08);
+    }
+    .opts{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      font-size:13px;
+      color:var(--muted);
+      margin-bottom:16px;
+    }
+    .opts a{color:var(--accent);text-decoration:none;font-weight:500}
+    button[type="submit"]{
+      width:100%;
+      padding:11px 14px;
+      border:0;
+      border-radius:10px;
+      background:var(--accent);
+      color:#fff;
+      font-weight:600;
+      cursor:pointer;
+      transition:transform .08s,box-shadow .08s;
+    }
+    button[type="submit"]:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(79,70,229,0.12)}
+    .small{font-size:13px;color:var(--muted);text-align:center;margin-top:12px}
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <h2>Sign in to your account</h2>
+    <form action="#" method="post" autocomplete="on">
+      <div class="field">
+        <label for="user">Username</label>
+        <input id="user" name="username" type="text" placeholder="you@example.com" required />
+      </div>
+      <div class="field">
+        <label for="pass">Password</label>
+        <input id="pass" name="password" type="password" placeholder="Enter your password" required />
+      </div>
+      <div class="opts">
+        <label><input type="checkbox" name="remember" /> Remember me</label>
+        <a href="#">Forgot?</a>
+      </div>
+      <button type="submit">Log in</button>
+      <div class="small">Don't have an account? <a href="#" style="color:var(--accent);text-decoration:none">Sign up</a></div>
+    </form>
+  </main>
+</body>
+</html>
